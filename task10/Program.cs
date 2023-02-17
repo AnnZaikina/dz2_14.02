@@ -1,8 +1,7 @@
 ﻿//Напишите программу, которая принимает на вход трёхзначное число и на выходе показывает вторую цифру этого числа.
-
-int num = new Random().Next(100,1000);
+Console.WriteLine("Введите любое трёхзначное число:");
+int num = int.Parse(Console.ReadLine()?? "0");
 int a1 = num / 10;
-int a2 = a1 / 10;
-int a3 = num % 10;
-Console.WriteLine ("Вторая цифра вашего числа равна " + num + a3);
+int a2 = a1 % 10;
+Console.WriteLine ("Вторая цифра вашего числа равна " +  a2);
 
